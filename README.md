@@ -227,16 +227,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
   When finished, open ADUC and observe the accounts in the appropriate OU and attempt to log into Client-1 with one of the accounts (take note of the password in the script
   </p>
 <p>
+  
 ![showing the generated users](https://github.com/user-attachments/assets/c15cf840-5607-442a-95a4-300714494878)
+
 
 </p>
 <p>
-  When finished, open ADUC and observe the accounts in the appropriate OU and attempt to log into Client-1 with one of the accounts (take note of the password in the script):
-</p>
-<p>
-  <img src="https://i.imgur.com/ZZCfiCp.png" height="75%" width="100%" alt="employee user accounts"/>
-  <img src="https://i.imgur.com/7gBpNzN.png" height="75%" width="100%" alt="employee user selection"/>
-  <img src="https://i.imgur.com/cqsddjn.png" height="75%" width="100%" alt="employee user login"/>
+  
+![login as coc jen](https://github.com/user-attachments/assets/48c6a941-725f-455c-a48f-186115e77f5e)
+
 </p>
 <br />
 <br />
