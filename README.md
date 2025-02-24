@@ -52,15 +52,19 @@ This tutorial outlines the implementation of on-premises Active Directory within
   Set Domain Controller’s NIC Private IP address to be static:
 </p>
 <p>
-  <img src="https://i.imgur.com/KHU9kC4.png" height="75%" width="100%" alt="static ip"/>
+  
+![change to static](https://github.com/user-attachments/assets/0a7bad58-0efd-4fee-a1d8-16b520b6de7d)
+
 </p>
 <p>
   Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher):
 </p>
 <p>
-  <img src="https://i.imgur.com/rFpHLdQ.png" height="75%" width="100%" alt="topology"/>
+  
+  ![check they are on same vnet](https://github.com/user-attachments/assets/48f17f17-ac3d-42f4-a60d-20d372899efd)
+
 </p>
-<br />
+<br /> 
 <br />
 <h3 align="center">Ensure Connectivity between the client and Domain Controller</h3>
 <br />
@@ -68,19 +72,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
   Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping):
 </p>
 <p>
-  <img src="https://i.imgur.com/bnPM9tX.png" height="75%" width="100%" alt="perpetual ping"/>
+  
+![ping dc1](https://github.com/user-attachments/assets/df32b6b2-ed37-4bae-865c-3bf20f15bdfc)
+
 </p>
 <p>
-  Login to the Domain Controller and enable ICMPv4 in on the local windows firewall:
-</p>
-<p>
-  <img src="https://i.imgur.com/ZpPyEkt.png" height="75%" width="100%" alt="enable ICMPv4"/>
-</p>
-<p>
-  Check back at Client-1 to see the ping succeed:
-</p>
-<p>
-  <img src="https://i.imgur.com/8o3OfjY.png" height="75%" width="100%" alt="ping success"/>
 </p>
 <br />
 <br />
@@ -90,25 +86,27 @@ This tutorial outlines the implementation of on-premises Active Directory within
   Login to DC-1 and install Active Directory Domain Services:
 </p>
 <p>
-  <img src="https://i.imgur.com/A1V9XJ5.png" height="75%" width="100%" alt="active directory install"/>
+  
+  ![install active directory](https://github.com/user-attachments/assets/f2be4e2e-2cd3-4daf-ac3d-34130ba06c5a)
+
 </p>
 <p>
-  Promote as a Domain Controller:
-</p>
-<p>
-  <img src="https://i.imgur.com/zi15fw4.png" height="75%" width="100%" alt="domain controller promotion"/>
 </p>
 <p>
   Setup a new forest as myactivedirectory.com (can be anything, just remember what it is - I ultimately did set it up as myadproject.com which you'll see in the next pic):
 </p>
 <p>
-  <img src="https://i.imgur.com/DCFUVrM.png" height="75%" width="100%" alt="set new forest"/>
+  
+![make a forest](https://github.com/user-attachments/assets/e944bc28-9505-4753-8920-c6d5cc8672f6)
+
 </p>
 <p>
-  Restart and then log back into DC-1 as user: myadproject.com\labuser:
+  Restart and then log back into DC-1 as user: mydomain.com\labuser:
 </p>
 <p>
-  <img src="https://i.imgur.com/7UakWMQ.png" height="75%" width="100%" alt="fqdn login"/>
+  
+![log in as jane admin](https://github.com/user-attachments/assets/08355e26-883c-4ad0-ae1f-1e735f00a1a7)
+
 </p>
 <br />
 <br />
@@ -118,26 +116,33 @@ This tutorial outlines the implementation of on-premises Active Directory within
   In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES” and another one called "_ADMINS":
 </p>
 <p>
-  <img src="https://i.imgur.com/cYmv0r7.png" height="75%" width="100%" alt="organizational unit"/>
-  <img src="https://i.imgur.com/v02CBPI.png" height="75%" width="100%" alt="organizational unit"/>
+  
+  ![organization unit](https://github.com/user-attachments/assets/7733aec0-ff69-4932-b857-56d080b7800c)
+
 </p>
 <p>
   Create a new employee named “Jane Doe” with the username of “jane_admin”:
 </p>
 <p>
-  <img src="https://i.imgur.com/h546E6L.png" height="75%" width="100%" alt="admin creation"/>
+  
+![create jane admin](https://github.com/user-attachments/assets/67adfdac-e810-4e83-9521-5f9a7409c18b)
+
 </p>
 <p>
   Add jane_admin to the “Domain Admins” Security Group:
 </p>
 <p>
-  <img src="https://i.imgur.com/mnLwTgq.png" height="75%" width="100%" alt="security group"/>
+  
+ ![make jane an admin](https://github.com/user-attachments/assets/6a76e29e-d117-4c7c-bceb-8e26f6835962)
+
 </p>
 <p>  
   Log out/close the Remote Desktop connection to DC-1 and log back in as “myadproject.com\jane_admin”. Use jane_admin as your admin account from now on:
 </p>
 <p>
-  <img src="https://i.imgur.com/xWZ4Kol.png" height="75%" width="100%" alt="admin login"/>
+  
+![log in as jane admin](https://github.com/user-attachments/assets/0ffaca3d-2f23-4ab0-8b24-69d32be79e49)
+
 </p>
 <br />
 <br />
@@ -147,7 +152,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address:
 </p>
 <p>
-  <img src="https://i.imgur.com/1KRsjI6.png" height="75%" width="100%" alt="client dns settings"/>
+
 </p>
 <p>
   From the Azure Portal, restart Client-1.
