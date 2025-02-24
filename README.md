@@ -217,7 +217,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p>
   
-![generating names](https://github.com/user-attachments/assets/45d413c6-845c-455e-8a19-52d30b8fa736)
+![scripts](https://github.com/user-attachments/assets/0797abbf-ccfb-4c6f-960a-9e0fcdcc31a7)
 
 </p>
 <p>
