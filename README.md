@@ -174,7 +174,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
   Create a new OU named “_CLIENTS” and drag Client-1 into there:
 </p>
 <p>
-  <img src="https://i.imgur.com/vB1n9m0.png" height="75%" width="100%" alt="active directory client verification"/>
+  
+![move client 1 into client OU](https://github.com/user-attachments/assets/86fd2fae-10db-42f3-b604-42894104f162)
+
 </p>
 <br />
 <br />
@@ -196,7 +198,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
   Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab):
 </p>
 <p>
-  <img src="https://i.imgur.com/8BfpT3s.png" height="75%" width="100%" alt="remote desktop setup"/>
+  
+  ![remote settings](https://github.com/user-attachments/assets/faee6eb7-b158-452a-88aa-b34e032e4710)
+
 </p>
 <br />
 <br />
@@ -212,13 +216,17 @@ This tutorial outlines the implementation of on-premises Active Directory within
   Create a new File and paste the contents of this script (https://github.com/Xinloiazn/configure-ad/blob/main/adscript.ps1) into it:
 </p>
 <p>
-  <img src="https://i.imgur.com/0i8uApf.png" height="75%" width="100%" alt="create users script"/>
+  
+![generating names](https://github.com/user-attachments/assets/45d413c6-845c-455e-8a19-52d30b8fa736)
+
 </p>
 <p>
   Run the script and observe the accounts being created:
 </p>
 <p>
-  <img src="https://i.imgur.com/6QOGzs6.png" height="75%" width="100%" alt="observe create users script"/>
+  
+![showing the generated users](https://github.com/user-attachments/assets/c15cf840-5607-442a-95a4-300714494878)
+
 </p>
 <p>
   When finished, open ADUC and observe the accounts in the appropriate OU and attempt to log into Client-1 with one of the accounts (take note of the password in the script):
