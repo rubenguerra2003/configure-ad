@@ -224,7 +224,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 </p>
 <p>
-  
+  When finished, open ADUC and observe the accounts in the appropriate OU and attempt to log into Client-1 with one of the accounts (take note of the password in the script
+  </p>
+<p>
 ![showing the generated users](https://github.com/user-attachments/assets/c15cf840-5607-442a-95a4-300714494878)
 
 </p>
