@@ -93,7 +93,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 </p>
 <p>
-  Setup a new forest as myactivedirectory.com (can be anything, just remember what it is - I ultimately did set it up as myadproject.com which you'll see in the next pic):
+  Setup a new forest as mydomain.com (can be anything, just remember what it is - I ultimately did set it up as mydomain.com which you'll see in the next pic):
 </p>
 <p>
   
@@ -146,7 +146,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <br />
 <br />
-<h3 align="center">Join Client-1 to your domain (myadproject.com)</h3>
+<h3 align="center">Join Client-1 to your domain (mydomain.com)</h3>
 <br />
 <p>
   From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address:
